@@ -14,7 +14,6 @@ export const todoListReducer = (state=initialState, action) => {
   }
 
   if (action.type === actions.SUBMIT_FORM) {
-    console.log('SUBMIT_FORM triggered in reducer');
     return Object.assign({}, state, {
       inputVal: '',
       todoList: [

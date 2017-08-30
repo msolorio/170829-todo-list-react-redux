@@ -2,9 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 export function List(props) {
-  const listItems = props.todoList.map((listItem) => {
+  const listItems = props.todoList.map((listItem, index) => {
     return (
-      <li className="listItem">
+      <li className="listItem" key={index}>
         {listItem}
       </li>
     )
